@@ -2,7 +2,7 @@ let imagemin = require('gulp-imagemin'),
     imageminJpegRecompress = require('imagemin-jpeg-recompress'),
     pngquant = require('imagemin-pngquant'),
     webp = require('imagemin-webp'),
-    extReplace = require('gulp-ext-replace'),
+    extReplace = require('gulp-ext-replace');
 
 module.exports = function () {
   $.gulp.task('img:dev', () => {
@@ -27,7 +27,7 @@ module.exports = function () {
         pngquant({quality: '65-70', speed: 5})
       ], {
       verbose: true
-      })))
+      }))
       .pipe($.gulp.dest('./build/img/'));
   });
 
