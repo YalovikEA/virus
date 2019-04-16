@@ -1,40 +1,43 @@
 {
-	"name": "start",
-	"version": "0.0.1",
-	"description": "Start Gulp with HTML + SCSS",
-	"main": "gulpfile.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Yalovik Evgeny",
-	"license": "ISC",
-	"devDependencies": {
-		"browser-sync": "^2.26.3",
-		"del": "^3.0.0",
-		"gulp": "4.0",
-		"gulp-autoprefixer": "^6.0.0",
-		"gulp-cheerio": "^0.6.3",
-		"gulp-concat": "^2.6.1",
-		"gulp-csscomb": "^3.0.8",
+  "name": "start",
+  "version": "0.0.1",
+  "description": "Start Gulp with HTML + SCSS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yalovik Evgeny",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "4.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
     "gulp-csso": "^3.0.1",
     "gulp-ext-replace": "^0.3.0",
-		"gulp-file-include": "^2.0.1",
-		"gulp-if": "^2.0.2",
-		"gulp-imagemin": "^5.0.3",
-		"gulp-load-plugins": "^1.5.0",
-		"gulp-notify": "^3.2.0",
-		"gulp-plumber": "^1.2.1",
-		"gulp-replace": "^1.0.0",
-		"gulp-sass": "^4.0.2",
-		"gulp-sourcemaps": "^2.6.4",
-		"gulp-svg-sprite": "^1.5.0",
-		"gulp-svgmin": "^2.1.0",
-		"gulp-uglifyjs": "^0.6.2",
+    "gulp-file-include": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^6.0.0",
-    "imagemin-webp": "^5.0.0"
-	},
-	"dependencies": {
-		"normalize.css": "^8.0.1",
-		"svg4everybody": "^2.1.9"
-	}
+    "imagemin-webp": "^5.0.0",
+    "webp-in-css": "^0.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "svg4everybody": "^2.1.9"
+  }
 }

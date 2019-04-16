@@ -5,25 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<![endif]-->
-  <!--[if lt IE 9]>
-  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <![endif]-->
-  
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
 
   <title>Page title</title>
-  
+
 
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  @include('./html/header.html')
+  <div class="page-wrapper">
+    @include('./html/header.html')
 
-  <main class="page-content"></main>
+    <main class="page-content"></main>
 
-  @include('./html/footer.html')
+    @include('./html/footer.html')
+  </div>
 
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>

@@ -11,21 +11,18 @@
 
 html {
   height: 100%;
+  font-size: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: $mainFont;
   font-size: $mainFontSize;
   line-height: 1.42;
-}
 
-main {
-  flex: 1 0 auto;
+  overflow-anchor: none; // Не прокручивает страницу пока не загрузится весь DOM
 }
 
 img {
@@ -48,13 +45,32 @@ p {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .container {
-  width: 1230px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -77,9 +93,6 @@ input[type="file"].visually-hidden {
   -webkit-clip-path: inset(100%);
 }
 
+@import "modules/buttons.scss";
 @import "modules/header.scss";
-@import "modules/footer.scss"
-
-
-
-
+@import "modules/footer.scss";

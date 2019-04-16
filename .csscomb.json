@@ -124,6 +124,7 @@
       "table-layout",
       "empty-cells",
       "caption-side",
+      "font-display",
       "font",
       "font-family",
       "font-size",
