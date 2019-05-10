@@ -1,7 +1,15 @@
 @font-face {
   font-display: swap;
-  font-family: "myFont";
+  font-family: "pf_square_sans_probold";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/myFont.woff2") format("woff2"), url("../fonts/myFont.woff") format("woff"), url("../fonts/myFont.svg#myFont") format("svg");
+  src: url("../fonts/pfsquaresanspro-bold-webfont.woff2") format("woff2"), url("../fonts/pfsquaresanspro-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "pf_square_sans_proregular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/pfsquaresanspro-regular-webfont.woff2") format("woff2"), url("../fonts/pfsquaresanspro-regular-webfont.woff") format("woff");
 }

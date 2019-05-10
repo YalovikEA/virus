@@ -18,7 +18,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: $mainFont;
+  font-family: $regular;
   font-size: $mainFontSize;
   line-height: 1.42;
 
@@ -61,7 +61,8 @@ textarea {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
+  background: linear-gradient(to bottom, #cdd6dc 0%, #91a0a7 100%);
 }
 
 main {
@@ -70,7 +71,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -95,4 +96,11 @@ input[type="file"].visually-hidden {
 
 @import "modules/buttons.scss";
 @import "modules/header.scss";
+@import "modules/intro.scss";
+@import "modules/features.scss";
 @import "modules/footer.scss";
+
+
+.section {
+  padding: rem(100) 0;
+}

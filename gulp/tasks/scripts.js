@@ -1,8 +1,10 @@
 module.exports = function () {
 	$.gulp.task('libsJS:dev', () => {
     return $.gulp.src([
+      'node_modules/jquery/dist/jquery.min.js',
 			'node_modules/svg4everybody/dist/svg4everybody.min.js',
-			'node_modules/webp-in-css/index.js',
+      'node_modules/webp-in-css/index.js',
+      'node_modules/slick-carousel/slick/slick.min.js'
 		])
 			.pipe($.gp.concat('libs.min.js'))
 			.pipe($.gulp.dest('./build/js/'))
@@ -13,8 +15,10 @@ module.exports = function () {
 
 	$.gulp.task('libsJS:build', () => {
     return $.gulp.src([
+      'node_modules/jquery/dist/jquery.min.js',
 			'node_modules/svg4everybody/dist/svg4everybody.min.js',
-			'node_modules/webp-in-css/index.js',
+      'node_modules/webp-in-css/index.js',
+      'node_modules/slick-carousel/slick/slick.min.js'
 		])
 			.pipe($.gp.concat('libs.min.js'))
 			.pipe($.gp.uglifyjs())

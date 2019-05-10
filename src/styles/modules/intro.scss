@@ -1,0 +1,20 @@
+.intro {
+  min-height: rem(675);
+  background: $black url("../img/general/intro-bg.jpg") center top/cover no-repeat;
+}
+
+.intro__title {
+  font-family: $bold;
+  font-size: rem(55);
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.intro__subtitle {
+  font-size: rem(35);
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
