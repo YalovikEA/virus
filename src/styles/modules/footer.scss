@@ -1,3 +1,13 @@
 footer {
   flex: 0 0 auto;
 }
+
+.page-footer {
+  padding: rem(25) 0;
+}
+
+.page-footer__copyright {
+  font-size: rem(30);
+  text-align: center;
+  color: $black;
+}

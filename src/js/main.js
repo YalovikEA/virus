@@ -6,18 +6,23 @@ $(document).ready(function() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // centerMode: true,
     arrows: true,
-    speed: 1000,
-    // centerPadding: '10vw',
-    // responsive: [{
-    //   breakpoint: 600,
-    //   settings: {
-    //     centerMode: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     centerPadding: '15vw'
-    //   }
-    // }]
+    speed: 1000
   });
+
+  // Menu
+  $('.nav-toggle').on('click', function() {
+    $('.page-wrapper').toggleClass('open');
+  });
+
+  // Modal
+  $('.features__action-btn').on('click', function() {
+    $('.page-wrapper').addClass('show')
+  })
+  $('.overlay').on('click', function() {
+    $('.page-wrapper').removeClass('show')
+  })
+  $('.modal__close').on('click', function() {
+    $('.page-wrapper').removeClass('show')
+  })
 });

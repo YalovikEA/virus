@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  display: none;
+  width: 100%;
+  max-width: rem(510);
+  padding: rem(50);
+  background: #1b6cb1;
+  border-radius: rem(50);
+  box-shadow: 0 rem(10) rem(18) 2px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+
+  .show & {
+    display: block;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: rem(20);
+  right: rem(35);
+  display: block;
+  width: rem(30);
+  height: rem(30);
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 212.982 212.982'%3E%3Cpath fill='%23ffffff' d='M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z' fill-rule='evenodd' clip-rule='evenodd'/%3E%3C/svg%3E") center/contain no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+
+  .show & {
+    display: block;
+  }
+}

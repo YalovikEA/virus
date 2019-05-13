@@ -1,0 +1,41 @@
+<section class="section feedback">
+  <div class="container">
+    <div class="section__content">
+      <h2 class="section__title feedback__title">Обратная связь</h2>
+
+      <div class="feedback__contacts">
+        <p class="feedback__mails">
+          <span>E-mail:</span>
+          <a href="mailto:mail@east-tech.by">mail@east-tech.by</a>
+        </p>
+        <p class="feedback__phones">
+          <span>Телефон:</span>
+          <a href="tel:+375291838554">+375291838554</a>
+        </p>
+        <p class="feedback__address">
+          Минск, Беларусь, <br> Кальварийская, 1-405
+        </p>
+      </div>
+
+      <div class="feedback__form">
+        <form class="feedback-form">
+          <div class="feedback-form__block">
+            <input class="feedback-form__field" id="feedbackFormUser" name="user" type="text" required>
+            <label class="feedback-form__block-title" for="feedbackFormUser">Ваше имя:</label>
+          </div>
+          <div class="feedback-form__block">
+            <input class="feedback-form__field" id="feedbackFormContacts" name="contacts" type="text" required>
+            <label class="feedback-form__block-title" for="feedbackFormContacts">Телефон или e-mail:</label>
+          </div>
+          <div class="feedback-form__block">
+            <textarea class="feedback-form__field" id="feedbackFormText" name="text" rows="1" required></textarea>
+            <label class="feedback-form__block-title" for="feedbackFormText">Сообщение:</label>
+          </div>
+          <div class="feedback-form__block feedback-form__block--submit">
+            <button class="feedback-form__submit-btn" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

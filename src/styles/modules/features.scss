@@ -1,9 +1,14 @@
 .features {
   margin-top: rem(-450);
+  margin-bottom: rem(50);
 
   .container {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 600px) {
+      padding: 0 5px;
+    }
   }
 }
 
@@ -14,7 +19,16 @@
   margin-bottom: rem(40);
   padding: rem(100);
   padding-bottom: rem(300);
-  background: url("../img/general/features-bg.png") center/cover no-repeat;
+  background: url("../img/general/features-bg.png") center/contain no-repeat;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    max-width: 580px;
+    min-height: auto;
+    padding: 5%;
+    background: $black;
+    background-image: none;
+  }
 
   .slick-arrow {
     position: absolute;
@@ -81,4 +95,19 @@
   border: none;
   border-radius: rem(40);
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  @media (max-width: 400px) {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  &:hover {
+    background: linear-gradient(to bottom, #1e71b4 0%, #0a2e52 100%);
+  }
+
+  &:focus {
+    background: linear-gradient(to bottom, #1e71b4 0%, #0a2e52 100%);
+    outline: none;
+  }
 }

@@ -15,19 +15,25 @@
   <title>Page title</title>
 
 
-  <link rel="stylesheet" href="styles/main.css">
+  <link href="styles/main.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="page-wrapper">
     @include('./html/header.html')
-    
+
     <main class="page-content">
       @include('./html/intro.html')
-      @include('./html/features.html')      
+      @include('./html/features.html')
+      @include('./html/how.html')
+      @include('./html/why.html')
+      @include('./html/cure.html')
+      @include('./html/feedback.html')
     </main>
 
     @include('./html/footer.html')
+    @include('./html/modal.html')
+    <div class="overlay"></div>
   </div>
 
   <script src="js/libs.min.js"></script>
