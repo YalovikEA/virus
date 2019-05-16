@@ -2,13 +2,13 @@
   margin-top: rem(-450);
   margin-bottom: rem(50);
 
+  @media (max-width: 375px) {
+    margin-top: rem(-375);
+  }
+
   .container {
     display: flex;
     flex-direction: column;
-
-    @media (max-width: 600px) {
-      padding: 0 5px;
-    }
   }
 }
 
@@ -19,43 +19,57 @@
   margin-bottom: rem(40);
   padding: rem(100);
   padding-bottom: rem(300);
-  background: url("../img/general/features-bg.png") center/contain no-repeat;
+  background: url("../img/general/features-bg.png") center top/contain no-repeat;
 
   @media (max-width: 600px) {
-    width: 100%;
-    max-width: 580px;
-    min-height: auto;
-    padding: 5%;
-    background: $black;
-    background-image: none;
+    width: 285px;
+    height: 400px;
+    padding: 60px 30px;
+    background: url("../img/general/features-mobile-bg.jpg") center top/contain no-repeat;
   }
 
   .slick-arrow {
     position: absolute;
-    top: 32%;
-    width: rem(25);
-    height: rem(40);
-    padding: 0;
+    top: 31.5%;
+    width: rem(30);
+    height: rem(45);
+    padding: 15px;
     font-size: 0;
     background: transparent;
     border: none;
     cursor: pointer;
+
+    @media (max-width: 600px) {
+      top: 75%;
+    }
   }
 
   .slick-prev {
     left: rem(35);
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 129 129'%3E%3Cpath fill='%23ffffff' d='M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z'/%3E%3C/svg%3E") center/cover no-repeat;
     transform: rotate(180deg);
+
+    @media (max-width: 600px) {
+      left: 75px;
+    }
   }
 
   .slick-next {
     right: rem(35);
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 129 129'%3E%3Cpath fill='%23ffffff' d='M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z'/%3E%3C/svg%3E") center/cover no-repeat;
+
+    @media (max-width: 600px) {
+      right: 75px;
+    }
   }
 }
 
 .feature {
   color: #ededf7;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .feature__title {
@@ -63,6 +77,10 @@
   font-size: rem(45);
   line-height: 1;
   font-weight: 400;
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 
 .feature__item {
@@ -70,6 +88,11 @@
   margin-bottom: rem(15);
   padding-left: rem(15);
   line-height: 1;
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+    line-height: 1.2;
+  }
 
   &::before {
     content: "-";

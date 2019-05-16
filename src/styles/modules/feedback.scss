@@ -1,0 +1,182 @@
+.feedback {
+  padding-top: rem(180);
+  padding-bottom: rem(80);
+  color: #ffffff;
+  background: linear-gradient(to bottom, #1e73b9 0%, #072757 100%);
+
+  .section__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "04";
+      right: rem(-75);
+
+      @media (max-width: 500px) {
+        right: 0;
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.feedback__title {
+  width: 100%;
+  margin-right: rem(130);
+  margin-bottom: rem(30);
+  text-align: right;
+  color: #ffffff;
+
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
+}
+
+
+// Contacts
+.feedback__contacts {
+  width: 40%;
+  padding-top: rem(50);
+
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  p {
+    color: #ffffff;
+  }
+}
+
+.feedback__mails {
+  margin-right: rem(15);
+  margin-bottom: rem(30);
+}
+
+.feedback__mails span {
+  font-family: $bold;
+  text-transform: uppercase;
+}
+
+.feedback__mails a {
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.feedback__phones {
+  margin-right: rem(15);
+  margin-bottom: rem(30);
+}
+
+.feedback__phones span {
+  font-family: $bold;
+}
+
+.feedback__phones a {
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+// Form
+.feedback__form {
+  width: 60%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.feedback-form,
+.order-form {
+  width: 100%;
+}
+
+.feedback-form__block,
+.order-form__block {
+  position: relative;
+}
+
+.feedback-form__block-title,
+.order-form__block-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: rem(25);
+  color: #ffffff;
+  transform: translateY(rem(50));
+  transition: 0.5s ease-in-out;
+}
+
+.feedback-form__field,
+.order-form__field {
+  width: 100%;
+  padding-top: rem(50);
+  padding-bottom: rem(10);
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  transition: 0.3s ease;
+}
+
+// Не отображать стили автокомплита
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+.feedback-form__field:focus,
+.order-form__field:focus {
+  border-color: lighten($gray, 30%);
+  outline: none;
+}
+
+.feedback-form__field:focus + .feedback-form__block-title,
+.feedback-form__field:valid + .feedback-form__block-title,
+.order-form__field:focus + .order-form__block-title,
+.order-form__field:valid + .order-form__block-title {
+  font-size: rem(18);
+  color: lighten($gray, 30%);
+  transform: translateY(rem(15));
+}
+
+.feedback-form__block--submit,
+.order-form__block--submit {
+  display: flex;
+  margin-top: rem(90);
+}
+
+.feedback-form__submit-btn,
+.order-form__submit-btn {
+  margin-left: auto;
+  padding: rem(15) rem(45);
+  font-family: $bold;
+  color: $black;
+  text-transform: uppercase;
+  border: none;
+  border-radius: rem(25);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background: darken(#ffffff, 30%);
+  }
+
+  &:focus {
+    background: darken(#ffffff, 30%);
+    outline: none;
+  }
+}

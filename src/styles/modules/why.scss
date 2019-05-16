@@ -1,0 +1,12 @@
+.why {
+  padding-top: rem(180);
+  padding-bottom: rem(130);
+}
+
+.why .section__content::before {
+  content: "02";
+}
+
+.why .section__content::after {
+  background: url("../img/general/why-bg.svg") center top/contain no-repeat;
+}

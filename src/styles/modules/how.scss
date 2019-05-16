@@ -1,0 +1,7 @@
+.how .section__content::before {
+  content: "01";
+}
+
+.how .section__content::after {
+  background: url("../img/general/how-bg.svg") center top/contain no-repeat;
+}

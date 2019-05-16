@@ -1,19 +1,50 @@
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -250%) scale(0);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(-50%, -10%) scale(0.2);
+  }
+
+  55% {
+    transform: translate(-50%, -80%) scale(0.4);
+  }
+
+  75% {
+    transform: translate(-50%, -25%) scale(0.6);
+  }
+
+  90% {
+    transform: translate(-50%, -70%) scale(0.8);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 101;
-  display: none;
   width: 100%;
   max-width: rem(510);
   padding: rem(50);
   background: #1b6cb1;
   border-radius: rem(50);
   box-shadow: 0 rem(10) rem(18) 2px rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -250%);
 
   .show & {
-    display: block;
+    animation: bounce 0.5s ease forwards;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -35,11 +66,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
-  display: none;
+  z-index: -100;
   background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 
   .show & {
-    display: block;
+    z-index: 100;
+    opacity: 1;
   }
 }
