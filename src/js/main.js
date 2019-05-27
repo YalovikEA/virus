@@ -25,4 +25,43 @@ $(document).ready(function() {
   $('.modal__close').on('click', function() {
     $('.page-wrapper').removeClass('show')
   })
+
+  // Form submit
+  $('.order-form').on('submit', function(e) {
+    e.preventDefault();
+    var url = $(this).attr('action')
+    var data = $(this).serialize();
+
+    $.ajax({
+      url : url,
+      type : "POST",
+      data: data,
+      success : function(data) {
+        $('.success').addClass('active')
+        setTimeout(function() {
+          $('.success').removeClass('active')
+          $('.page-wrapper').removeClass('show')
+        }, 1300)
+      } 
+    });
+  })
+
+  $('.feedback-form').on('submit', function(e) {
+    e.preventDefault();
+    var url = $(this).attr('action')
+    var data = $(this).serialize();
+
+    $.ajax({
+      url : url,
+      type : "POST",
+      data: data,
+      success : function(data) {
+        $('.success').addClass('active')
+        setTimeout(function() {
+          $('.success').removeClass('active')
+          $('.page-wrapper').removeClass('show')
+        }, 1300)
+      } 
+    });
+  })
 });
